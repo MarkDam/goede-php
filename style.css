@@ -5,3 +5,26 @@ main {
   margin-left: 797px;
   font-size: 40px;
 }
+
+#vliegtuig {
+  position: absolute;
+  right: 0px;
+  top: 140px;
+  width: 200px;
+  height: 100px;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 20s;
+  animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes example {
+  0%   {right: 0px;}
+  100%  {right: 2500px;}
+}
+
+@keyframes example {
+  0%   {right: 0px;}
+  100%  {right: 2500px;}
+}

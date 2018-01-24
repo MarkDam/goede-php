@@ -2,8 +2,6 @@
   date_default_timezone_set('Europe/Amsterdam');
 
   $time = date("h:i:s");
-  $text = "";
-  $img = "";
 
   $t = date('H');
 
@@ -39,13 +37,18 @@
   </head>
 
   <body background="<?php echo $img ?>" onload="update()">
+
+    <img id="vliegtuig" src="vliegtuig.png" alt="een vliegtuig">
+
     <main>
+
 
       <div id="time"></div>
 
       <?php
       echo $text;
       ?>
+
 
     </main>
 
