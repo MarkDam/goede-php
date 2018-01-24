@@ -1,0 +1,13 @@
+main {
+  position: absolute;
+  top: 400px;
+  left: 905px;
+}
+
+#button {
+  position: absolute;
+  top: 30px;
+  right: 53px;
+  width: 80px;
+  height: 35px;
+}
