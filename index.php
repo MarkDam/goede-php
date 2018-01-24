@@ -8,16 +8,16 @@
   $t = date('H');
 
     if ($t < "6") {
-    $text = "Goede nacht";
+    $text = " Goede nacht";
       $img = "night.png";
   } elseif ($t < "12") {
-    $text = "Goede morgen!";
+    $text = " Goede morgen!";
       $img = "morning.png";
   } elseif ($t < "18") {
-    $text = "Goede middag!";
+    $text = " Goede middag!";
       $img = "afternoon.png";
   } elseif ($t < "24") {
-    $text = "Goede avond!";
+    $text = " Goede avond!";
       $img = "evening.png";
   }
 //  header("Refresh:1");
@@ -38,15 +38,14 @@
 
   </head>
 
-  <body background="<?php echo $img ?>">
-    <main id="main">
+  <body background="<?php echo $img ?>" onload="update()">
+    <main>
+
+      <div id="time"></div>
 
       <?php
-      echo $time;
       echo $text;
       ?>
-
-      <button id="button" onclick="restart()">Reload</button>
 
     </main>
 
